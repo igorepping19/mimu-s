@@ -428,6 +428,31 @@ color:#777;
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Força as duas colunas */
+        gap: 20px;                      /* Espaço entre as colunas */
+        align-items: start;
+        padding: 20px 10px;
+    }
+
+    /* Diminui um pouco as fontes para caberem melhor lado a lado */
+    .footer-grid h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .footer-grid p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    /* Garante que a logo/imagem não quebre o layout */
+    .footer-grid img {
+        max-width: 80px; 
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 600px) {
