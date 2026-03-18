@@ -322,16 +322,61 @@ text-decoration:none;
 
 /* FOOTER */
 
-footer{
-background:white;
-padding:50px 0;
-margin-top:40px;
+footer {
+    background: white;
+    padding: 40px 0 05px 0; /* Diminuímos o padding inferior para 10px */
+    margin-top: 40px;
 }
 
 .footer-grid{
 display:flex;
 justify-content:space-between;
 gap:40px;
+}
+
+.footer-grid p {
+    max-width: 250px; /* Limita a largura do texto para ele quebrar linha mais cedo */
+    font-size: 14px;  /* Deixa a fonte levemente menor que o corpo do site */
+    color: #666;      /* Uma cor mais suave para reduzir o peso visual */
+}
+
+/* Se quiser que o título também seja menor */
+.footer-grid h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Alinha o ícone e o nome lado a lado */
+.logo2 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    margin-bottom: 10px;
+}
+
+/* Deixa o ícone do mesmo tamanho das redes sociais */
+.logo2 img {
+    height: 30px; /* Mesma altura sugerida para os ícones sociais */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Garante que o H4 não tenha margens extras que quebrem o alinhamento */
+.logo2 h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.icones {
+    display: flex;
+    gap: 15px; /* Espaço entre cada ícone */
+    margin-top: 15px;
+}
+
+.icones img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
 }
 
 .copyright{
@@ -341,67 +386,67 @@ font-size:14px;
 color:#777;
 }
 
-/* RESPONSIVIDADE */
-
-@media (max-width:900px){
-
-.container{
-padding:0 25px;
+.btn-local {
+    margin-top: 15px; /* Ajuste este valor conforme desejar */
+    display: inline-block; /* Garante que a margem funcione corretamente */
 }
 
-.nav{
-flex-direction:row;
-flex-wrap:wrap;
-gap:15px;
+/* Garante que o ícone mantenha um tamanho harmonioso */
+.btn-local img {
+    height: 30px; 
+    width: auto;
 }
 
-.about{
-grid-template-columns:1fr;
+/* RESPONSIVIDADE CORRIGIDA */
+
+@media (max-width: 900px) {
+    header {
+        position: relative;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    nav {
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.gallery{
-grid-template-columns:repeat(2,1fr);
-}
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
 
-.footer-grid{
-flex-direction:column;
-text-align:center;
-}
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
 
-.benefits{
-flex-wrap:wrap;
-gap:20px;
-}
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
 
-}
-
-@media (max-width:600px){
-
-.container{
-padding:0 20px;
-}
-
-.hero h1{
-font-size:28px;
-}
-
-nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-nav a{
-margin:8px;
-}
-
-.product-card img{
-height:250px;
-}
-
-.img{
-height:300px;
-}
-
+    .img {
+        height: 300px;
+    }
 }
 
 /* CORREÇÃO DOS BOTÕES */
