@@ -329,6 +329,13 @@ footer {
     margin-top: 40px;
 }
 
+footer h4 {
+    margin-top: 0 !important; 
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
 .footer-grid {
     display: flex;
     justify-content: space-between;
@@ -350,21 +357,17 @@ footer {
     font-size: 16px;
 }
 
-/* Alinha o ícone e o nome lado a lado */
 .logo2 {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
     gap: 10px;
-    /* Espaço entre o ícone e o texto */
     margin-bottom: 10px;
 }
 
-/* Deixa o ícone do mesmo tamanho das redes sociais */
 .logo2 img {
-    height: 30px;
-    /* Mesma altura sugerida para os ícones sociais */
+    height: 25px; /* Reduza levemente para alinhar com a altura da fonte do H4 */
     width: auto;
-    object-fit: contain;
+    margin-top: 2px; /* Ajuste fino para alinhar visualmente com a primeira letra */
 }
 
 /* Garante que o H4 não tenha margens extras que quebrem o alinhamento */
@@ -391,6 +394,15 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #777;
+}
+
+.localiza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centraliza os itens entre si (h4, p e ícone) */
+    text-align: center;     /* Garante que as linhas de texto fiquem no meio */
+    margin-left: auto;      /* CRUCIAL: Empurra todo o bloco para a direita */
+    max-width: fit-content;               /* Faz com que ocupe o espaço disponível de forma equilibrada */
 }
 
 .localizacaoIcon {
@@ -448,10 +460,8 @@ footer {
     .footer-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* Força as duas colunas */
+        align-items: start; /* Alinha o topo das duas colunas na mesma régua */
         gap: 20px;
-        /* Espaço entre as colunas */
-        align-items: start;
         padding: 20px 10px;
     }
 
