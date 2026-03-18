@@ -1,343 +1,347 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
-body{
-background:#f5f5f5;
-color:#333;
-line-height:1.6;
-padding-top:70px;
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px;
 }
 
 /* CONTAINER */
 
-.container{
-max-width:1200px;
-margin:auto;
-padding:0 40px;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px;
 }
 
 /* IMAGENS */
 
-img{
-max-width:100%;
-height:auto;
-display:block;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* NAV */
 
-header{
-background:white;
-border-bottom:1px solid #ddd;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:1000;
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.nav{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:25px;
-padding:10px 0;
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 10px 0;
 }
 
 /* LOGO */
 
-.logo{
-display:flex;
-align-items:center;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.logo img{
-height:45px;
+.logo img {
+    height: 45px;
 }
 
 /* MENU */
 
-nav{
-display:flex;
-align-items:center;
-gap:35px;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
 }
 
-nav a{
-text-decoration:none;
-color:#333;
-font-weight:500;
-font-size:15px;
-transition:0.2s;
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.2s;
 }
 
-nav a:hover{
-color:#0dbd9b;
+nav a:hover {
+    color: #0dbd9b;
 }
 
 /* BOTÃO */
 
-.btn{
-background:transparent;
-border:none;
-outline:none;
-padding:0;
-display:flex;
-align-items:center;
-justify-content:center;
-cursor:pointer;
+.btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.btn img{
-height:38px;
-width:auto;
-object-fit:contain;
+.btn img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* HERO */
 
-.hero{
-min-height:420px;
-background:linear-gradient(135deg,#86a8c5,#1abc9c);
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:80px 20px;
+.hero {
+    min-height: 420px;
+    background: linear-gradient(135deg, #86a8c5, #1abc9c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
 }
 
-.hero h1{
-font-size:40px;
-margin-bottom:15px;
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-.hero p{
-font-size:18px;
+.hero p {
+    font-size: 18px;
 }
 
-.btn-white{
-background:white;
-border:none;
-padding:12px 26px;
-border-radius:25px;
-margin-top:20px;
-cursor:pointer;
-font-weight:500;
-text-decoration:none;
+.btn-white {
+    background: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /* BENEFITS */
 
-.benefits{
-display:flex;
-justify-content:space-around;
-padding:40px 0;
-background:white;
-margin-top:40px;
-margin-bottom:40px;
-border-radius:10px;
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
 }
 
-.benefit{
-text-align:center;
+.benefit {
+    text-align: center;
 }
 
-.benefit img{
-width:50px;
-height:auto;
-margin:0 auto 10px auto;
+.benefit img {
+    width: 50px;
+    height: auto;
+    margin: 0 auto 10px auto;
 }
 
 /* ABOUT */
 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-background:white;
-padding:40px;
-border-radius:12px;
-margin-bottom:60px;
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 60px;
 }
 
-.about h2{
-margin-bottom:15px;
+.about h2 {
+    margin-bottom: 15px;
 }
 
-.about-image{
-height:320px;
-border-radius:12px;
-overflow:hidden;
+.about-image {
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.about-image img{
-width:100%;
-height:100%;
-object-fit:contain;
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* PRODUCTS */
 
-.products{
-margin-bottom:70px;
+.products {
+    margin-bottom: 70px;
 }
 
-.products h2{
-text-align:center;
-margin-bottom:35px;
+.products h2 {
+    text-align: center;
+    margin-bottom: 35px;
 }
 
-.product-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-margin-top:20px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
 }
 
 /* CARD DE PRODUTO */
 
-.product-card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-text-align:center;
-padding:25px;
-font-weight:600;
-transition:0.3s;
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 25px;
+    font-weight: 600;
+    transition: 0.3s;
 
-aspect-ratio:1/1;
+    aspect-ratio: 1/1;
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-gap:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-.product-card img{
-width:100%;
-height:220px;
-object-fit:contain;
-margin-bottom:15px;
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
-.product-card:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* SERVICES */
 
-.services{
-margin-bottom:70px;
+.services {
+    margin-bottom: 70px;
 }
 
-.services h2{
-text-align:center;
-margin-bottom:35px;
+.services h2 {
+    text-align: center;
+    margin-bottom: 35px;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 /* CARD DOS SERVIÇOS */
 
-.img{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-height:450px;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
-transition:0.3s;
+.img {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.3s;
 }
 
-.img:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+.img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* IMAGEM DO SERVIÇO */
 
-.img img{
-width:100%;
-height:400px;
-object-fit:contain;
+.img img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
 }
 
 /* REVIEWS */
 
-.reviews{
-background:white;
-padding:40px;
-margin-top:50px;
-border-radius:12px;
+.reviews {
+    background: white;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 12px;
 }
 
-.review-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:25px;
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
 }
 
-.review-grid img{
-width:100%;
-border-radius:10px;
+.review-grid img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* CTA */
 
-.cta{
-margin-top:60px;
-background:linear-gradient(135deg,#86a8c5,#1abc9c);
-color:white;
-text-align:center;
-padding:70px 20px;
+.cta {
+    margin-top: 60px;
+    background: linear-gradient(135deg, #86a8c5, #1abc9c);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
 }
 
-.cta .btn-white{
-background:rgb(30, 133, 81);
-color:white;
-border:none;
-padding:12px 26px;
-border-radius:25px;
-margin-top:20px;
-cursor:pointer;
-font-weight:500;
-text-decoration:none;
+.cta .btn-white {
+    background: rgb(30, 133, 81);
+    color: white;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /* FOOTER */
 
 footer {
     background: white;
-    padding: 40px 0 05px 0; /* Diminuímos o padding inferior para 10px */
+    padding: 40px 0 05px 0;
+    /* Diminuímos o padding inferior para 10px */
     margin-top: 40px;
 }
 
-.footer-grid{
-display:flex;
-justify-content:space-between;
-gap:40px;
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .footer-grid p {
-    max-width: 250px; /* Limita a largura do texto para ele quebrar linha mais cedo */
-    font-size: 14px;  /* Deixa a fonte levemente menor que o corpo do site */
-    color: #666;      /* Uma cor mais suave para reduzir o peso visual */
+    max-width: 250px;
+    /* Limita a largura do texto para ele quebrar linha mais cedo */
+    font-size: 14px;
+    /* Deixa a fonte levemente menor que o corpo do site */
+    color: #666;
+    /* Uma cor mais suave para reduzir o peso visual */
 }
 
 /* Se quiser que o título também seja menor */
@@ -350,13 +354,15 @@ gap:40px;
 .logo2 {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
     margin-bottom: 10px;
 }
 
 /* Deixa o ícone do mesmo tamanho das redes sociais */
 .logo2 img {
-    height: 30px; /* Mesma altura sugerida para os ícones sociais */
+    height: 30px;
+    /* Mesma altura sugerida para os ícones sociais */
     width: auto;
     object-fit: contain;
 }
@@ -369,7 +375,8 @@ gap:40px;
 
 .icones {
     display: flex;
-    gap: 15px; /* Espaço entre cada ícone */
+    gap: 15px;
+    /* Espaço entre cada ícone */
     margin-top: 15px;
 }
 
@@ -379,21 +386,30 @@ gap:40px;
     object-fit: contain;
 }
 
-.copyright{
-text-align:center;
-margin-top:20px;
-font-size:14px;
-color:#777;
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.localizacaoIcon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* Afasta o ícone do número de telefone */
 }
 
 .btn-local {
-    margin-top: 15px; /* Ajuste este valor conforme desejar */
-    display: inline-block; /* Garante que a margem funcione corretamente */
+    margin-top: 15px;
+    /* Ajuste este valor conforme desejar */
+    display: inline-block;
+    /* Garante que a margem funcione corretamente */
 }
 
 /* Garante que o ícone mantenha um tamanho harmonioso */
 .btn-local img {
-    height: 30px; 
+    height: 30px;
     width: auto;
 }
 
@@ -431,8 +447,10 @@ color:#777;
 
     .footer-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Força as duas colunas */
-        gap: 20px;                      /* Espaço entre as colunas */
+        grid-template-columns: 1fr 1fr;
+        /* Força as duas colunas */
+        gap: 20px;
+        /* Espaço entre as colunas */
         align-items: start;
         padding: 20px 10px;
     }
@@ -450,7 +468,7 @@ color:#777;
 
     /* Garante que a logo/imagem não quebre o layout */
     .footer-grid img {
-        max-width: 80px; 
+        max-width: 80px;
         margin-bottom: 10px;
     }
 }
@@ -476,24 +494,24 @@ color:#777;
 
 /* CORREÇÃO DOS BOTÕES */
 
-.hero-content{
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-gap:15px;
-text-align:center;
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
 }
 
-.btn-white{
-display:inline-block;
+.btn-white {
+    display: inline-block;
 }
 
-.cta{
-text-align:center;
+.cta {
+    text-align: center;
 }
 
-.cta .btn-white{
-display:inline-block;
-margin-top:20px;
+.cta .btn-white {
+    display: inline-block;
+    margin-top: 20px;
 }
